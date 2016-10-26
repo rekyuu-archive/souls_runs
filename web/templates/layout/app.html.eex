@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="rekyuu">
+
+    <title>Dark Souls III Build Generator</title>
+    <link rel="stylesheet" href="<%= static_path(@conn, "/css/app.css") %>">
+  </head>
+
+  <body>
+    <div id="main" class="ui container">
+      <nav class="ui secondary pointing menu">
+        <a href="/" id="header" class="item">Dark Souls III Build Generator</a>
+
+        <div class="right menu">
+          <a href="#" class="ui item">GitHub</a>
+        </div>
+      </nav>
+
+      <%= render @view_module, @view_template, assigns %>
+    </div>
+
+    <div id="footer" class="ui basic segment"></div>
+  </body>
+</html>
