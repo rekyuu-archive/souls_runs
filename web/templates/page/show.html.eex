@@ -3,7 +3,7 @@
     <%= @seed %>
   </h1>
 
-  <a class="ui green button" href="/new">Generate New Build</a>
+  <a class="ui green button" href="/<%= @game %>">Generate New Build</a>
 </div>
 
 <table class="ui definition table">
@@ -42,7 +42,7 @@
 
     <tr>
       <td>Collectables</td>
-      <td><%= @result.collectables |> Enum.join(", ") %></td>
+      <td><%= @result.quests |> Enum.join(", ") %></td>
     </tr>
   </tbody>
 </table>
@@ -52,7 +52,7 @@
 
   <div class="ui bulleted list">
     <div class="item">
-      <div>The convenant, weapon, and armor set must all be obtained as quickly as possible and must be used for the majority of the run (that means killing Dancer before Vordt if needed).</div>
+      <div>The convenant, weapon, and armor set must all be obtained as quickly as possible and must be used for the majority of the run.</div>
       <div class="list">
         <div class="item">You may only use the starting armor and weapon until you get the ones listed.</div>
       </div>

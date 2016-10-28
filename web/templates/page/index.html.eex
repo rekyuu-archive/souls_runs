@@ -1,25 +1,13 @@
 <div class="ui basic center aligned segment">
-  <a class="ui green button" href="/new">Generate New Build</a>
-</div>
+  <h1 class="ui header">
+    <%= @message %>
+  </h1>
 
-<div class="ui basic text segment">
-  <h1 class="ui header">Rules</h1>
+  <br />
 
-  <div class="ui bulleted list">
-    <div class="item">
-      <div>The convenant, weapon, and armor set must all be obtained as quickly as possible and must be used for the majority of the run (that means killing Dancer before Vordt if needed).</div>
-      <div class="list">
-        <div class="item">You may use any weapon and armor before then as long as you get to the listed ones ASAP.</div>
-      </div>
-    </div>
-    <div class="item">If you are using spells you may not use anything than what is listed above, which is why a secondary weapon is listed for balance.</div>
-    <div class="item">
-      <div>You must get all collectable key items and use them accordingly before the end of the run if possible.</div>
-      <div class="list">
-        <div class="item">For instance, if you get the Lift Key you must also defeat the Darkwraith, if you get a Scroll you must turn it in, etc.</div>
-      </div>
-    </div>
-    <div class="item">Anything else (consumables, rings, etc) are completely up to the player.</div>
-    <div class="item">Any% or All Bosses is up to the player.</div>
-  </div>
+  <a class="ui disabled button" href="/des">Demon's Souls</a>
+  <a class="ui button" href="/ds1">Dark Souls</a>
+  <a class="ui disabled button" href="/ds2">Dark Souls II</a>
+  <a class="ui disabled button" href="/bb">BloodBorne</a>
+  <a class="ui button" href="/ds3">Dark Souls III</a>
 </div>

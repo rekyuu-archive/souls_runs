@@ -7,14 +7,14 @@
     <meta name="description" content="">
     <meta name="author" content="rekyuu">
 
-    <title>Dark Souls III Build Generator</title>
-    <link rel="stylesheet" href="<%= static_path(@conn, "/css/app.css") %>">
+    <title>SoulsBorne Randomizer</title>
+    <link rel="stylesheet" href='<%= static_path(@conn, "/css/app.css") %>'>
   </head>
 
   <body>
     <div id="main" class="ui container">
       <nav class="ui secondary pointing menu">
-        <a href="/" id="header" class="item">Dark Souls III Build Generator</a>
+        <a href="/" id="header" class="item">SoulsBorne Randomizer</a>
 
         <div class="right menu">
           <a href="https://github.com/rekyuu/souls_runs" class="ui item">GitHub</a>
@@ -22,8 +22,10 @@
       </nav>
 
       <%= render @view_module, @view_template, assigns %>
-    </div>
 
-    <div id="footer" class="ui basic segment"></div>
+      <div id="footer" class="ui basic segment">
+        <p><i>Created by <a href="https://rekyuu.co">rekyuu</a></i></p>
+      </div>
+    </div>
   </body>
 </html>

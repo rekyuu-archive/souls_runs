@@ -13,18 +13,19 @@ defmodule SoulsRuns.Router do
     plug :accepts, ["json"]
   end
 
-  scope "/", SoulsRuns do
-    pipe_through :browser
-
-    get "/", PageController, :index
-    get "/new", PageController, :generate
-    get "/:seed", PageController, :show
-  end
-
   scope "/api", SoulsRuns do
     pipe_through :api
+    get "/", ApiController, :index
 
-    get "/", RunController, :generate
-    get "/:seed", RunController, :show
+    get "/:game", ApiController, :generate
+    get "/:game/:seed", ApiController, :show
+  end
+
+  scope "/", SoulsRuns do
+    pipe_through :browser
+    get "/", PageController, :index
+
+    get "/:game", PageController, :generate
+    get "/:game/:seed", PageController, :show
   end
 end
