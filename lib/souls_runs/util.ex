@@ -37,7 +37,7 @@ defmodule SoulsRuns.Util do
 
     word = words |> Enum.random
 
-    templates = [
+    [
       "#{word} ahead",
       "No #{word} ahead",
       "#{word} required ahead",
@@ -55,9 +55,7 @@ defmodule SoulsRuns.Util do
       "praise the #{word}!",
       "Let there be #{word}",
       "Ahh, #{word}..."
-    ]
-
-    templates |> Enum.random
+    ] |> Enum.random
   end
 
   def gen_conjunction_message do
@@ -79,9 +77,9 @@ defmodule SoulsRuns.Util do
   end
 
   def gen_message do
-    cond do
-      one_to(2) -> gen_conjunction_message
-      true -> gen_single_message
+    case one_to(2) do
+      true  -> gen_conjunction_message
+      false -> gen_single_message
     end
   end
 
@@ -125,7 +123,7 @@ defmodule SoulsRuns.Util do
       weapon: weapon,
       armor: "#{Enum.random(defs[:armor])} Set",
       spells: spells,
-      quests: Enum.take_random(defs[:quests], 5),
+      quests: Enum.take_random(defs[:quests], 3),
       challenges: Enum.take_random(SoulsRuns.Util.Defs.challenges, 3)
     }
   end
