@@ -41,7 +41,7 @@
     <%= end %>
 
     <tr>
-      <td>Collectables</td>
+      <td>Quests</td>
       <td><%= @result.quests |> Enum.join(", ") %></td>
     </tr>
   </tbody>
