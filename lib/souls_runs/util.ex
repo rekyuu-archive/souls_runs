@@ -29,8 +29,7 @@ defmodule SoulsRuns.Util do
         # Attribute
         "regular", "strike", "thrust", "slash", "magic", "crystal", "fire", "chaos", "lightning", "blessing", "dark", "critical hits", "bleeding", "poison", "toxic", "frost", "curse", "equipment breakage",
         # Concepts
-        "chance", "quagmire", "hint", "secret", "sleeptalk", "happiness", "misfortune", "life", "death", "demise", "joy", "fury", "agony", "sadness", "tears", "loyalty", "betrayal", "hope", "despair", "fear",
-        "losing sanity", "victory", "defeat", "sacrifice", "light", "dark", "bravery", "confidence", "vigor", "revenge", "resignation", "overwhelming", "regret", "pointless", "man", "woman", "friendship", "love", "recklessness", "composure", "guts", "comfort", "silence", "deep", "dregs",
+        "chance", "quagmire", "hint", "secret", "sleeptalk", "happiness", "misfortune", "life", "death", "demise", "joy", "fury", "agony", "sadness", "tears", "loyalty", "betrayal", "hope", "despair", "fear", "losing sanity", "victory", "defeat", "sacrifice", "light", "dark", "bravery", "confidence", "vigor", "revenge", "resignation", "overwhelming", "regret", "pointless", "man", "woman", "friendship", "love", "recklessness", "composure", "guts", "comfort", "silence", "deep", "dregs",
         # Musings
         "good luck", "fine work", "I did it!", "I've failed...", "here!", "not here!", "I can't take this...", "lonely...", "don't you dare!", "do it!", "look carefully", "listen carefully", "think carefully", "this place again?", "now the real fight begins", "you don't deserve this", "keep moving", "pull back", "give it up", "don't give up", "help me...", "impossible...", "bloody expensive...", "let me out of here...", "stay calm", "like a dream...", "seems familiar...", "are you ready?", "it'll happen to you too", "praise the Sun!", "may the flames guide thee"
     ]
