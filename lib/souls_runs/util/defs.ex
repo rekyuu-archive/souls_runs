@@ -1,4 +1,8 @@
 defmodule SoulsRuns.Util.Defs do
+  def challenge do
+    ["No Estus"]
+  end
+
   def ds1 do
     [
       classes: ["Warrior", "Knight", "Wanderer", "Thief", "Bandit", "Hunter", "Sorcerer", "Pyromancer", "Cleric", "Deprived"],
