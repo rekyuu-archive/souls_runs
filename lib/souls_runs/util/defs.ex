@@ -1,6 +1,6 @@
 defmodule SoulsRuns.Util.Defs do
-  def challenge do
-    ["No Estus"]
+  def challenges do
+    ["No Estus", "No shield", "No rolling", "Play online and eligible for invasion as much as possible", "No consumables", "Weapon in left hand", "No healing", "No or minimal bonfires", "Gravelord/Aggression mod", "Fat roll only", "Do not level HP", "Do not level Endurance", "Kill every enemy you see", "Permadeath", "Must kill with parry", "Must kill with R2", "Pick up what you see"]
   end
 
   def ds1 do

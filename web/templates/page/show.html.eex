@@ -46,8 +46,8 @@
     </tr>
 
     <tr>
-      <td>Challenge</td>
-      <td><%= @result.challenge %></td>
+      <td>Challenges</td>
+      <td><%= @result.challenges |> Enum.join(", ") %></td>
     </tr>
   </tbody>
 </table>
