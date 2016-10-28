@@ -10,7 +10,7 @@ defmodule SoulsRuns.Util do
   def one_to(n), do: Enum.random(1..n) <= 1
   def percent(n), do: Enum.random(1..100) <= n
 
-  def gen_message do
+  def gen_single_message do
     words = [
       # Creatures
       "enemy", "monster", "mob enemy", "tough enemy", "critical foe", "Hollow", "pilgrim", "prisoner", "monstrosity", "skeleton", "ghost", "beast", "lizard", "bug", "grub", "crab", "dwarf", "giant", "demon", "dragon", "knight", "sellsword", "warrior", "herald", "bandit", "assassin", "sorcerer", "pyromancer", "cleric", "deprived", "sniper", "duo", "trio", "you", "you bastard", "good fellow", "saint", "wretch", "charmer", "poor soul", "oddball", "nimble one", "laggard", "moneybags", "beggar", "miscreant", "liar", "fatty", "beanpole", "youth", "elder", "old codger", "old dear", "merchant", "artisan", "master", "sage", "champion", "Lord of Cinder", "king", "queen", "prince", "princess", "angel", "god", "friend", "ally", "spouse", "covenantor", "Phantom", "Dark Spirit",
@@ -58,6 +58,31 @@ defmodule SoulsRuns.Util do
     ]
 
     templates |> Enum.random
+  end
+
+  def gen_conjunction_message do
+    message1 = gen_single_message
+    message2 = gen_single_message
+
+    [
+      "#{message1} and then #{message2}",
+      "#{message1} but #{message2}",
+      "#{message1} therefore #{message2}",
+      "#{message1} in short #{message2}",
+      "#{message1} or #{message2}",
+      "#{message1} only #{message2}",
+      "#{message1} by the way #{message2}",
+      "#{message1} so to speak #{message2}",
+      "#{message1} all the more #{message2}",
+      "#{message1}, #{message2}"
+    ] |> Enum.random
+  end
+
+  def gen_message do
+    cond do
+      one_to(2) -> gen_conjunction_message
+      true -> gen_single_message
+    end
   end
 
   def gen_build(defs, seed) do
