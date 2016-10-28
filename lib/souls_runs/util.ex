@@ -101,7 +101,7 @@ defmodule SoulsRuns.Util do
       armor: "#{Enum.random(defs[:armor])} Set",
       spells: spells,
       quests: Enum.take_random(defs[:quests], 5),
-      challenges: Enum.take_random(SoulsRuns.Util.Defs.challenge, 3)
+      challenges: Enum.take_random(SoulsRuns.Util.Defs.challenges, 3)
     }
   end
 end
