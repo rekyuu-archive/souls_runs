@@ -9,6 +9,7 @@ defmodule SoulsRuns.ApiController do
   def show(conn, params) do
     defs = case params["game"] do
       "ds1" -> SoulsRuns.Util.Defs.ds1
+      "ds2" -> SoulsRuns.Util.Defs.ds2
       "ds3" -> SoulsRuns.Util.Defs.ds3
       _ -> nil
     end

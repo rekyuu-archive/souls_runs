@@ -1,6 +1,6 @@
 defmodule SoulsRuns.Util.Defs do
   def challenges do
-    ["No Estus", "No shield", "No rolling", "Play online and eligible for invasion as much as possible", "No consumables", "Weapon in left hand", "No healing", "No or minimal bonfires", "Gravelord/Aggression mod", "Fat roll only", "Do not level HP", "Do not level Endurance", "Kill every enemy you see", "Permadeath", "Must kill with parry", "Must kill with R2", "Pick up what you see"]
+    ["No Estus", "No shield", "No rolling", "Play online and eligible for invasion as much as possible", "No consumables", "Weapon in left hand", "No healing", "No or minimal bonfires", "Gravelord/Aggression mod", "Fat roll only", "Do not level HP", "Do not level Endurance", "Kill every enemy you see", "Permadeath", "Must kill with parry", "Must kill with R2", "Pick up what you see", "Fully upgraded Estus"]
   end
 
   def ds1 do
@@ -10,7 +10,7 @@ defmodule SoulsRuns.Util.Defs do
       covenants: ["Warrior of Sunlight", "Princess Guard", "Way of White", "Darkwraith", "Forest Hunter", "Path of the Dragon", "Blade of the Dark Moon", "Gravelord Servant", "Chaos Servant"],
       armor: ["Warrior", "Knight", "Wanderer", "Thief", "Bandit", "Hunter", "Sorcerer", "Pyromancer", "Cleric", "Shadow", "Black Sorcerer", "Channeler", "Maiden", "Antiquated", "Painting Guardian", "Dingy", "Gwyndolin Moonlight", "Big Hat's", "Gold-Hemmed Black", "Crimson", "Black", "Witch", "Xanthous", "Chain", "Chester's", "Lord's Blade", "Iron", "Eastern", "Adventurer's", "Balder", "Thorns", "Elite Knight", "Ornstein's", "Crystalline", "Brass", "Favor", "Catarina", "Silver Knight", "Black Knight", "Paladin", "Cleric", "Steel", "Artorias", "Gough", "Black Iron", "Giant Armor", "Havel's", "Smough's", "Iron Golem", "Stone Knight", "Guardian"],
       infusions: ["Lightning", "Crystal", "Divine", "Occult", "Magic", "Enchanted", "Fire", "Chaos"],
-      quests: ["Defeat Havel", "Free Griggs", "Free Big Hat Logan", "Defeat a Titanite Demon", "Free Laurentius", "Defeat Lautrec in Anor Londo", "Defeat or rescue Solaire in Lost Izalith", "Turn in any coal", "Help Siegmeyer in Anor Londo", "Defeat Darkmoon Knightess", "Defeat hollow Oscar", "Defeat hollow Crestfallen Knight"],
+      quests: ["Defeat Havel", "Free Griggs", "Free Big Hat Logan", "Defeat a Titanite Demon", "Free Laurentius", "Defeat Lautrec in Anor Londo", "Defeat or rescue Solaire in Lost Izalith", "Turn in any coal", "Help Siegmeyer in Anor Londo", "Defeat Darkmoon Knightess", "Defeat hollow Oscar", "Defeat hollow Crestfallen Knight", "Get the \"Proper Bow\" gesture", "Get the \"Hurrah!\" gesture", "Get the \"Shrug\" gesture", "Get the \"Look Skyward\" gesture", "Get the \"Well! What is it!\" gesture", "Get the \"Prostration\" gesture"],
       spells: [
         sorceries: ["Soul Arrow", "Great Soul Arrow", "Heavy Soul Arrow", "Great Heavy Soul Arrow", "Homing Soulmass", "Hush", "Cast Light", "Soul Spear", "Crystal Soul Spear", "Crystal Magic Weapon", "Homing Crystal Soulmass", "Remedy", "Resist Curse", "Repair", "Hidden Body", "Chameleon", "Hidden Weapon", "Magic Shield", "Strong Magic Shield", "Magic Weapon", "Great Magic Weapon", "Aural Decoy", "White Dragon Breath", "Fall Control", "Dark Orb", "Dark Bead", "Dark Fog", "Pursuers"],
         pyromancies: ["Fireball", "Fire Orb", "Great Fireball", "Flash Sweat", "Combustion", "Great Combustion", "Fire Whip", "Chaos Fire Whip", "Fire Surge", "Acid Surge", "Firestorm", "Fire Tempest", "Great Chaos Fireball", "Power Within", "Iron Flesh", "Poison Mist", "Toxic Mist", "Undead Rapport", "Black Flame"],
@@ -57,6 +57,76 @@ defmodule SoulsRuns.Util.Defs do
           staves: ["Sorcerer's Catalyst", "Izalith Catalyst", "Logan's Catalyst", "Beatrice's Catalyst", "Oolacile Ivory Catalyst", "Demon's Catalyst", "Tin Banishment Catalyst", "Tin Crystallization Catalyst", "Tin Darkmoon Catalyst", "Manus Catalyst"],
           flames: ["Pyromancy Flame"],
           chimes: ["Talisman", "Canvas Talisman", "Thorolund Talisman", "Ivory Talisman", "Sunlight Talisman", "Velka's Talisman"]
+        ]
+      ]
+    ]
+  end
+
+  def ds2 do
+    [
+      classes: ["Warrior", "Knight", "Swordsman", "Bandit", "Cleric", "Sorcerer", "Explorer", "Deprived"],
+      gifts: ["Life Ring", "Human Effigy", "Healing Wares", "Homeward Bone", "Seed of a Tree of Giants", "Bonfire Ascetic", "Petrified Something"],
+      covenants: ["Heirs of the Sun", "Way of the Blue", "Brotherhood of Blood", "Blue Sentinels", "Bell Keepers", "Rat King", "Dragon Remnants", "Company of Champions", "Pilgrims of Dark"],
+      armor: ["Agdayne's", "Alva", "Archdrake", "Astrologist's", "Aurous", "Bandit", "Benhardt's", "Black Leather", "Black", "Black Witch", "Bone King", "Brigand", "Cale's", "Catarina", "Chaos", "Creighton's", "Dark", "Dragonrider", "Drangleic", "Elite Knight", "Executioner's", "Falconer", "Faraam", "Hard Leather", "Havel's", "Hexer's", "Hunter", "Imported", "Infantry", "Insolent", "Jester's", "Judgment", "King's", "Knight", "Lion Mage", "Looking Glass", "Lucatiel's", "Moon Butterfly", "Nahr Alma", "Pate's", "Penal", "Royal Soldier", "Saint's", "Smelter Demon", "Steel", "Targray's", "Tattered Cloth", "Throne Defender", "Throne Watcher", "Traveling Merchant", "Tseldora", "Velstadts's", "Vengarl's", "Wanderer", "White Priest", "Xanthous"],
+      infusions: ["Magic", "Fire", "Lightning", "Dark", "Poison", "Bleed", "Raw", "Enchanted", "Mundane"],
+      quests: ["Retrieve the Rebel's Greatshield", "Obtain the Ring of Blades +1", "Rescue Ornifex", "Get the chest in the Majula basement", "Complete Sorcerer Navlaan's sidequest", "Defeat all three Things Betwixt ogres"],
+      spells: [
+        sorceries: [
+          ["Soul Arrow", "Great Soul Arrow", "Heavy Soul Arrow", "Great Heavy Soul Arrow", "Homing Soul Arrow", "Heavy Homing Soul Arrow", "Homing Soulmass", "Homing Crystal Soulmass", "Soul Spear", "Shockwave", "Soul Spear Barrage", "Soul Shower", "Soul Greatsword", "Soul Vortex", "Soul Bolt", "Soul Geyser", "Magic Weapon", "Great Magic Weapon", "Crystal Magic Weapon", "Strong Magic Shield", "Yearn", "Hush", "Fall Control", "Repair", "Cast Light", "Chameleon", "Unleash Magic", "Focus Souls", "Soul Flash"],
+          ["Dark Orb", "Dark Hail", "Dark Fog", "Affinity", "Dead Again", "Dark Weapon", "Whisper of Despair", "Repel", "Twisted Barricade", "Dark Greatsword", "Recollection"]
+        ] |> Enum.random,
+        pyromancies: ["Fireball", "Fire Orb", "Great Fireball", "Firestorm", "Fire Tempest", "Chaos Storm", "Combustion", "Great Combustion", "Fire Whip", "Poison Mist", "Toxic Mist", "Acid Surge", "Lingering Flame", "Flame Swathe", "Forbidden Sun", "Flame Weapon", "Flash Sweat", "Iron Flesh", "Warmth", "Immolation", "Outcry", "Dance of Fire", "Fire Snake"],
+        miracles: [
+          ["Heal", "Med Heal", "Great Heal Excerpt", "Great Heal", "Soothing Sunlight", "Replenishment", "Resplendent Life", "Caressing Prayer", "Force", "Emit Force", "Heavenly Thunder", "Lightning Spear", "Great Lightning Spear", "Soul Appease", "Blinding Bolt", "Magic Barrier", "Great Magic Barrier", "Sacred Oath", "Unveil", "Perseverance", "Sunlight Blade", "Denial", "Splintering Lightning Spear"],
+          ["Scraps of Life", "Dark Storm", "Resonant Soul", "Climax", "Resonant Flesh", "Resonant Weapon", "Lifedrain Patch", "Profound Still", "Promised Walk of Peace", "Dark Dance"]
+        ] |> Enum.random,
+      ],
+      weapons: [
+        regular: [
+          daggers: ["Dagger", "Black Flamestone Dagger", "Parrying Dagger", "Bandit's Knife", "Broken Thief Sword"],
+          straight_swords: ["Shortsword", "Longsword", "Yellow Quartz Longsword", "Broken Straightsword", "Broadsword"],
+          greatswords: ["Bastard Sword", "Bluemoon Greatsword", "Claymore", "Flamberge", "Drangleic Sword", "Mastodon Greatsword", "Mirrah Greatsword"],
+          ultra_greatswords: ["Zweihander", "Greatsword"],
+          curved_swords: ["Scimitar", "Melu Scimitar", "Falchion", "Shotel", "Eleum Loyce"],
+          curved_greatswords: ["Murakumo", "Arced Sword", "Curved Dragon Greatsword", "Curved Nil Greatsword"],
+          katanas: ["Uchigatana", "Washing Pole", "Manslayer", "Darkdrift"],
+          thrusting_swords: ["Estoc", "Mail Breaker", "Rapier", "Ricard's Rapier", "Black Scorpion Stinger"],
+          axes: ["Dragonslayer's Crescent Axe", "Bound Hand Axe", "Hand Axe", "Battle Axe", "Bandit Axe", "Gyrm Axe"],
+          greataxes: ["Greataxe", "Bandit Greataxe", "Gyrm Greataxe", "Drakekeeper's Greataxe", "Crescent Axe"],
+          hammers: ["Homunculus Mace", "Mace", "Club", "Morning Star", "Reinforced Club", "Mace of the Insolent", "Handmaid's Ladle", "Blacksmith's Hammer", "Barbed Club"],
+          great_hammers: ["Large Club", "Great Club", "Giant Warrior Club", "Old Knight Hammer", "Pickaxe"],
+          fists: ["Caestus", "Claws", "Work Hook"],
+          spears: ["Winged spear", "Partizan", "Spear", "Pike", "Heide Spear", "Pilgrim's Spontoon"],
+          halberds: ["Halberd", "Lucerne", "Scythe", "Old Knight Halberd"],
+          lances: ["Heide Lance", "Grand Lance"],
+          scythes: ["Great Scythe"],
+          whips: ["Whip"]
+        ],
+        special: [
+          daggers: ["Royal Dirk", "Myrtha's Bent Blade"],
+          straight_swords: ["Red Rust Sword", "Puzzling Stone Sword", "Fume Sword", "Ivory Straight Sword"],
+          greatswords: ["Thorned Greatsword", "Ruler's Sword", "Black Knight Greatsword", "Defender Greatsword", "Watcher Greatsword", "Key to the Embedded", "Drakeblood Greatsword", "Majestic Greatsword"],
+          ultra_greatswords: ["Pursuer's Ultra Greatsword", "Drakewing Ultra Greatsword", "King's Ultra Greatsword", "Black Knight Ultra Greatsword", "Smelter Sword", "Lost Sinner's Sword", "Fume Ultra Greatsword", "Aged Smelter Sword", "Ivory King Ultra Greatsword"],
+          curved_swords: ["Red Rust Scimitar", "Spider Fang", "Warped Sword"],
+          curved_greatswords: ["Curved Nil Greatsword"],
+          katanas: ["Chaos Blade", "Bewitched Alonne Sword"],
+          thrusting_swords: ["Spider's Silk", "Espada Ropera", "Ice Rapier"],
+          axes: ["Butcher's Knife"],
+          greataxes: ["Giant Stone Axe", "Black Knight Greataxe"],
+          hammers: ["Craftman's Hammer"],
+          great_hammers: ["Iron King Hammer", "Malformed Shell", "Dragon Tooth", "Sacred Chime Hammer"],
+          fists: ["Bone Fist"],
+          spears: ["Pate's Spear", "Spitfire Spear", "Dragonslayer Spear", "Gargoyle Bident", "Yorgh's Spear"],
+          halberds: ["Dragonrider's Halberd", "Santier's Spear", "Old Knight Pike", "Black Knight Halberd", "Roaring Halberd", "Helix Halberd"],
+          lances: ["Chariot Lance"],
+          scythes: ["Scythe of Nahr Alma", "Bone Scythe"],
+          whips: ["Notched Whip", "Spotted Whip"],
+          bows: ["Short Bow", "Long Bow", "Composite Bow", "Dragonrider Bow", "Hunter's Blackbow"],
+          greatbows: ["Alonne Greatbow", "Dragonslayer Greatbow", "Twin-Headed Greatbow"],
+          crossbows: ["Light Crossbow", "Heavy Crossbow", "Shield Crossbow", "Avelyn", "Sanctum Crossbow"],
+          staves: ["Witchtree Branch", "Transgressor's Staff", "Sorcerer's Staff", "Olenford's Staff", "Archdrake Staff", "Bone Staff", "Staff of Wisdom", "Sunset Staff", "Black Witch's Staff", "Azal's Staff", "Retainer Staff"],
+          flames: ["Pyromancy Flame", "Dark Pyromancy Flame"],
+          chimes: ["Cleric's Sacred Chime", "Witchtree Bellvine", "Priest's Chime", "Dragon Chime", "Archdrake Chime", "Idol's Chime", "Caitha's Chime", "Protective Chime", "Disc Chime", "Chime of Screams"]
         ]
       ]
     ]
@@ -120,7 +190,7 @@ defmodule SoulsRuns.Util.Defs do
         miracles: ["Heal Aid", "Heal", "Med Heal", "Great Heal", "Soothing Sunlight", "Replenishment", "Bountiful Light", "Bountiful Sunlight", "Caressing Tears", "Tears of Denial", "Force", "Emit Force", "Wrath of the Gods", "Lightning Spear", "Lightning Stake", "Lightning Storm", "Divine Pillars of Light", "Blessed Weapon", "Lightning Blade", "Darkmoon Blade", "Magic Barrier", "Great Magic Barrier", "Dark Blade", "Vow of Silence", "Dead Again", "Atonement", "Deep Protection", "Gnaw", "Dorhys' Gnawing", "Lifehunt Scythe", "Way of White Corona"]
       ],
       gifts: ["Life Ring", "Divine Blessing", "Hidden Blessing", "Black Firebomb", "Fire Gem", "Sovereignless Soul", "Gold Coin", "Cracked Red Eye Orb", "Young White Branch"],
-      quests: ["Receive at least 5 Dark Sigils", "Turn in the Firekeeper Soul", "Turn in any pyromancy tome", "Defeat the High Wall Darkwraith", "Turn in any divine tome", "Turn in any scroll", "Free Greirat", "Free Irina", "Turn in Loretta's Bone", "Save Siegward from Old Cell", "Marry Anri", "Turn in Eyes of a Fire Keeper", "Free Karla", "Defeat Hawkwood in the Farron Mausoleum"]
+      quests: ["Receive at least 5 Dark Sigils", "Turn in the Firekeeper Soul", "Turn in any pyromancy tome", "Defeat the High Wall Darkwraith", "Turn in any divine tome", "Turn in any scroll", "Free Greirat", "Free Irina", "Turn in Loretta's Bone", "Save Siegward from Old Cell", "Marry Anri", "Turn in Eyes of a Fire Keeper", "Free Karla", "Defeat Hawkwood in the Farron Mausoleum", "Defeat the Stray Demon", "Disable the Smouldering Lake ballista", "Defeat Havel", "Kill the Crucifixion Woods giant crabs", "Get the \"Beckon\" gesture", "Get the \"Call Over\" gesture", "Get the \"Welcome\" gesture", "Get the \"Applause\" gesture", "Get the \"Quiet Resolve\" gesture", "Get the \"Rejoice\" gesture", "Get the \"Hurrah!\" gesture", "Get the \"Praise the Sun\" gesture", "Get the \"Dignified Bow\" gesture", "Get the \"Collapse\" gesture", "Get the \"Prostration\" gesture", "Get the \"Patch's Squat\" gesture", "Get the \"Toast\" gesture", "Get the \"Sleep\" gesture"]
     ]
   end
 end

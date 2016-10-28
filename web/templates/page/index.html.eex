@@ -7,7 +7,7 @@
 
   <a class="ui disabled button" href="/des">Demon's Souls</a>
   <a class="ui button" href="/ds1">Dark Souls</a>
-  <a class="ui disabled button" href="/ds2">Dark Souls II</a>
+  <a class="ui button" href="/ds2">Dark Souls II</a>
   <a class="ui disabled button" href="/bb">BloodBorne</a>
   <a class="ui button" href="/ds3">Dark Souls III</a>
 </div>

@@ -39,10 +39,14 @@
         <td><%= @result.spells |> Enum.join(", ") %></td>
       </tr>
     <%= end %>
+  </tbody>
+</table>
 
+<table class="ui definition table">
+  <tbody>
     <tr>
-      <td>Quests</td>
-      <td><%= @result.quests |> Enum.join(", ") %></td>
+      <td class="two wide">Quests</td>
+      <td class="twelve wide"><%= @result.quests |> Enum.join(", ") %></td>
     </tr>
 
     <tr>
