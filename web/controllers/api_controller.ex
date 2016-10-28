@@ -9,7 +9,7 @@ defmodule SoulsRuns.ApiController do
   def generate(conn, %{"game" => game}) do
     cond do
       game in ["ds1", "ds3"] -> redirect conn, to: "/api/#{game}/#{gen_seed}"
-      _ -> render conn, "error.json", error: 404, message: "Page not found (Game does not exist)"
+      true -> render conn, "error.json", error: 404, message: "Page not found (Game does not exist)"
     end
   end
 
