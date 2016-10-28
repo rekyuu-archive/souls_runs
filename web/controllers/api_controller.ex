@@ -6,18 +6,16 @@ defmodule SoulsRuns.ApiController do
     render conn, "index.json", message: gen_message
   end
 
-  def generate(conn, %{"game" => game}) do
-    cond do
-      game in ["ds1", "ds3"] -> redirect conn, to: "/api/#{game}/#{gen_seed}"
-      true -> render conn, "error.json", error: 404, message: "Page not found (Game does not exist)"
-    end
-  end
-
-  def show(conn, %{"game" => game, "seed" => seed}) do
-    defs = case game do
+  def show(conn, params) do
+    defs = case params["game"] do
       "ds1" -> SoulsRuns.Util.Defs.ds1
       "ds3" -> SoulsRuns.Util.Defs.ds3
       _ -> nil
+    end
+
+    seed = case params["seed"] do
+      nil -> gen_seed |> Integer.to_string
+      seed -> seed
     end
 
     cond do
@@ -28,7 +26,7 @@ defmodule SoulsRuns.ApiController do
           seed = seed |> String.to_integer
           result = gen_build(defs, seed)
 
-          render conn, "show.json", seed: seed, game: game, result: result
+          render conn, "show.json", seed: seed, game: params["game"], result: result
         rescue
           ArgumentError ->
             render conn, "error.json", error: 500, message: "Internal server error (Seed must be numbers only)"

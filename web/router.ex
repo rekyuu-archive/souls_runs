@@ -17,7 +17,7 @@ defmodule SoulsRuns.Router do
     pipe_through :api
     get "/", ApiController, :index
 
-    get "/:game", ApiController, :generate
+    get "/:game", ApiController, :show
     get "/:game/:seed", ApiController, :show
   end
 
