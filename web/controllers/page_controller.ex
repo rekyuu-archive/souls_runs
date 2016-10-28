@@ -8,7 +8,7 @@ defmodule SoulsRuns.PageController do
 
   def generate(conn, %{"game" => game}) do
     cond do
-      game in ["ds1", "ds3"] -> redirect conn, to: "/api/#{game}/#{gen_seed}"
+      game in ["ds1", "ds3"] -> redirect conn, to: "/#{game}/#{gen_seed}"
       true -> render conn, "error.html", error: 404, message: "Page not found (Game does not exist)"
     end
   end
