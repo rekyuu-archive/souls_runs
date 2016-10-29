@@ -1,0 +1,167 @@
+<div class="ui basic segment">
+  <h1 class="ui dividing header">API</h1>
+
+  <h2 class="ui header" style="font-family: monospace">GET /api</h2>
+  <p>Returns a random message.</p>
+
+  <table class="ui table">
+    <thead>
+      <tr>
+        <th class="two wide">Field</th>
+        <th class="two wide">Type</th>
+        <th class="ten wide">Description</th>
+      </tr>
+    </thead>
+
+    <tbody>
+      <tr>
+        <td style="font-family: monospace">message</td>
+        <td>String</td>
+        <td>Generated message.</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <h2 class="ui header" style="font-family: monospace">GET /api/{game}/{seed:optional}</h2>
+  <p>Returns a run with a random seed. If <span style="font-family: monospace">:seed</span> is not provided, a random one will be created.</p>
+
+  <table class="ui table">
+    <thead>
+      <tr>
+        <th class="two wide">Field</th>
+        <th class="two wide">Type</th>
+        <th class="ten wide">Description</th>
+      </tr>
+    </thead>
+
+    <tbody>
+      <tr>
+        <td style="font-family: monospace">result</td>
+        <td>Run object</td>
+        <td>Generated run.</td>
+      </tr>
+
+      <tr>
+        <td style="font-family: monospace">seed</td>
+        <td>Integer</td>
+        <td>Seed used to generate the run.</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <h2 class="ui header">Definitions</h2>
+
+  <table class="ui table">
+    <thead>
+      <tr>
+        <th class="two wide">Field</th>
+        <th class="two wide">Type</th>
+        <th class="ten wide">Description</th>
+      </tr>
+    </thead>
+
+    <tbody>
+      <tr>
+        <td style="font-family: monospace">game</td>
+        <td>String</td>
+        <td>Only  <span style="font-family: monospace">ds1</span>, <span style="font-family: monospace">ds2</span>, and <span style="font-family: monospace">ds3</span> are excepted.</td>
+      </tr>
+
+      <tr>
+        <td style="font-family: monospace">seed</td>
+        <td>Integer</td>
+        <td>Series of numbers used to randomize runs.</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <h1 class="ui dividing header">Objects</h1>
+
+  <h2 class="ui header">Run Object</h2>
+
+  <table class="ui table">
+    <thead>
+      <tr>
+        <th class="two wide">Field</th>
+        <th class="two wide">Type</th>
+        <th class="ten wide">Description</th>
+      </tr>
+    </thead>
+
+    <tbody>
+      <tr>
+        <td style="font-family: monospace">armor</td>
+        <td>String</td>
+        <td>Character armor set.</td>
+      </tr>
+
+      <tr>
+        <td style="font-family: monospace">challenges</td>
+        <td>Array of Strings</td>
+        <td>List of 3 random challenges.</td>
+      </tr>
+
+      <tr>
+        <td style="font-family: monospace">class</td>
+        <td>String</td>
+        <td>Starting character class.</td>
+      </tr>
+
+      <tr>
+        <td style="font-family: monospace">covenant</td>
+        <td>String</td>
+        <td>Character covenant.</td>
+      </tr>
+
+      <tr>
+        <td style="font-family: monospace">gift</td>
+        <td>String</td>
+        <td>Starting character gift.</td>
+      </tr>
+
+      <tr>
+        <td style="font-family: monospace">spells</td>
+        <td>Array of Strings</td>
+        <td>List of 7 allowed spells if a catalyst is chosen.</td>
+      </tr>
+
+      <tr>
+        <td style="font-family: monospace">quests</td>
+        <td>Array of Strings</td>
+        <td>List of 3 random quests.</td>
+      </tr>
+
+      <tr>
+        <td style="font-family: monospace">weapon</td>
+        <td>String</td>
+        <td>Character weapon. If a catalyst is used, a second minor weapon will be included.</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <h2 class="ui header">Error Object</h2>
+
+  <table class="ui table">
+    <thead>
+      <tr>
+        <th class="two wide">Field</th>
+        <th class="two wide">Type</th>
+        <th class="ten wide">Description</th>
+      </tr>
+    </thead>
+
+    <tbody>
+      <tr>
+        <td style="font-family: monospace">error</td>
+        <td>Integer</td>
+        <td>Error code.</td>
+      </tr>
+
+      <tr>
+        <td style="font-family: monospace">message</td>
+        <td>String</td>
+        <td>Error reason.</td>
+      </tr>
+    </tbody>
+  </table>
+</div>

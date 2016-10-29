@@ -25,6 +25,8 @@ defmodule SoulsRuns.Router do
     pipe_through :browser
     get "/", PageController, :index
 
+    get "/about", PageController, :about
+
     get "/:game", PageController, :generate
     get "/:game/:seed", PageController, :show
   end

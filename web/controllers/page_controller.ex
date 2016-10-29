@@ -6,6 +6,10 @@ defmodule SoulsRuns.PageController do
     render conn, "index.html", message: gen_message
   end
 
+  def about(conn, _params) do
+    render conn, "about.html"
+  end
+
   def generate(conn, %{"game" => game}) do
     cond do
       game in ["ds1", "ds2", "ds3"] ->

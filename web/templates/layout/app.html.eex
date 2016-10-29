@@ -18,6 +18,7 @@
         <a href="/" id="header" class="item">SoulsBorne Randomizer</a>
 
         <div class="right menu">
+          <a href="/about" class="ui item">About</a>
           <a href="https://github.com/rekyuu/souls_runs" class="ui item">GitHub</a>
         </div>
       </nav>
