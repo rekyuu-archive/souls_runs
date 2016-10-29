@@ -8,8 +8,8 @@ use Mix.Config
 # with brunch.io to recompile .js and .css sources.
 config :souls_runs, SoulsRuns.Endpoint,
   http: [port: 3275],
-  debug_errors: true,
-  code_reloader: true,
+  debug_errors: false,
+  code_reloader: false,
   check_origin: false,
   watchers: [node: ["node_modules/brunch/bin/brunch", "watch", "--stdin"]]
 
